@@ -1,0 +1,15 @@
+require('./styles/usage/app.scss');
+var home = require('./scripts/tpls/home.html')
+var sort = require('./scripts/tpls/sort.html')
+var cart = require('./scripts/tpls/cart.html')
+var my = require('./scripts/tpls/my.html')
+var detail = require('./scripts/tpls/detail.html')
+
+require('./scripts/utils/util.common.js').render(home)
+// require('./scripts/utils/util.common.js').render(sort)
+// require('./scripts/utils/util.common.js').render(detail)
+require('./scripts/views/home.js')
+// require('./scripts/views/sort.js')
+// require('./scripts/views/cart.js')
+// require('./scripts/views/my.js')
+// require(./scripts/views/detail.js)

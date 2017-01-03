@@ -1,0 +1,49 @@
+$base-color:#2dac64;
+@font-face {font-family: "yofont";
+  src: url('/images/fonts/iconfont.eot?t=1483162666814'); /* IE9*/
+  src: url('/images/fonts/iconfont.eot?t=1483162666814#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/images/fonts/iconfont.woff?t=1483162666814') format('woff'), /* chrome, firefox */
+  url('/images/fonts/iconfont.ttf?t=1483162666814') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/images/fonts/iconfont.svg?t=1483162666814#iconfont') format('svg'); /* iOS 4.1- */
+}
+footer{
+		height: .6rem;
+		background: rgba(255,255,255,.5);
+		ul{
+			@include flexbox();
+			@include border(1px 0 0 0, #CED6D0);
+			li{
+				@include flex();
+				.a{
+					padding-top: .02rem;
+				}
+				 &.active b,
+	        	 &.active i {
+	          	color: $base-color;
+	          }
+				i,b{
+					display: block;
+					text-align: center;
+				}
+				 b {
+				 	font-weight: normal;
+			          font-size: .14rem;
+			          line-height: .3rem;
+			          color: #939393;
+			          position: relative;
+
+			        }
+        i {
+          font-size: .28rem;
+          height: .3rem;
+          line-height: .3rem;
+        }
+			}
+		}
+	}
+	>*{
+		width: 100%;
+	}
+
+
+

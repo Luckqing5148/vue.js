@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import "./common.scss";
+@import "./lib/swiper.scss";
+.home{
+	@include flexbox();
+	@include flex-direction(column);
+	height: 100%;
+	header{
+		height: .44rem;
+		background:$base-color;
+		ul{
+			@include flexbox();
+				li:first-child{
+					@include flex();
+					@include flexbox();
+					@include justify-content();
+        			@include align-items();
+        			div{
+        				height: .26rem;
+        				width: 3rem;
+        				background: #fff;
+        				@include flexbox();
+        				border-radius: .2rem;
+        			}
+        			b{
+        				@include flex(1);
+        				display: block;
+        				text-align: center;
+        				line-height: .3rem;
+        				font-size: .24rem;
+        			}
+        			input{
+        				border: none;
+        				@include flex(5);
+        				border-radius: .2rem;
+        			}
+				}
+				li:last-child{
+				line-height: .44rem;
+				width: .35rem;
+				text-align: center;
+				font-size: .28rem;
+				color: #fff;
+			}
+		}
+	}
+	section{
+		@include flex();
+		overflow-y: scroll;
+   		width: 100%;
+   		>div{
+   			@include border(1px 0 0 0, #CED6D0);
+   			background: #fff;
+   		}
+   		div:nth-child(1){
+          .swiper-pagination-bullet-active{
+              background:#ff8526;
+          } 
+           img{
+               width: 100%;
+               height: 100%;
+               height: 2.22rem;
+           }
+   		}
+
+   		div:nth-child(2){
+   			height: .35rem;
+   			p{
+   				padding: .07rem;
+   				 @include flexbox();
+   				 b{
+				text-align: center;
+   					}
+   			b:nth-child(1){
+   				@include flex(1)
+   				color:#ff8526;
+   				@include border(0 1px 0 0, #CED6D0);
+   			}
+   			b:nth-child(2){
+   				@include flex(.5)
+				color:#ff8526;
+   			}
+   			b:nth-child(3){
+   				@include flex(3)
+   				@include ellipsis(null, 1);
+   			}
+   			}
+   			
+   		}
+   		div:nth-child(3){
+   			height: 1.05rem;
+   			ul{
+   				@include flexbox();
+   				height: 100%;
+   				li{
+   					text-align: center;
+   					@include flex();
+   					img,b{
+   						display: block;
+   						margin: auto;
+   					}
+   					img{
+   						width: .5rem;
+   						height: .5rem;
+   						margin-top: .12rem;
+   					}
+   					b{
+   						margin-top: .12rem;
+   						font-size: 0.14rem;
+   					}
+   				}
+   			}
+
+   		}
+   		div:nth-child(4){
+   			@include border(.12rem 0 0 0, #eeeded);
+   			height: auto;
+   			h1{
+				padding: .12rem;
+				@include border(0 0 1px 0, #CED6D0);
+				font-size: .18rem;
+   			}
+   			ol{
+   				li{
+   					@include flexbox();
+   					margin: 0 .21rem 0 .12rem;
+	   				padding: .07rem 0; 
+					  height: 1.21rem;
+				    @include border(0 0 1px 0, #CED6D0);
+					>div:nth-child(1){
+						width: 1.4rem;	
+					}
+					>div:nth-child(2){
+						position: relative;
+						@include flex();
+						h2{
+							@include ellipsis(null, 1);
+							font-size: .16rem;
+						}
+						h3{
+              @include ellipsis(null, 1);
+							line-height: .46rem;
+							font-size: .14rem;
+						} 
+						 span{
+							color: red;
+							display: block;
+							line-height: .36rem;
+							font-size: .14rem;
+						} 
+						b{
+							color: #939393;
+							position: absolute;
+							display: block;
+							right: 0;
+							top: .6rem;
+							font-size: .14rem;
+							&.price{
+								top: .8rem;
+							}
+
+							}
+					}
+   				}
+				img{
+					width: 1.32rem;
+					height: 1.06rem;
+				}
+
+   			}
+   		}
+
+	}
+	
+}

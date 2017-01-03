@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "./common.scss";
+@import "./lib/swiper.scss";
+.sort{
+	@include flexbox();
+	@include flex-direction(column);
+	height: 100%;
+	header{
+		background: $base-color;
+		height: .44rem;
+		@include flexbox();
+		b{
+			margin:auto;	
+			color:#fff;
+			font-size:.24rem;	
+		}
+	}
+	section{
+		background: #fff;
+		@include flex();
+		width: 100%;
+		overflow-y:scroll;
+		ol{
+			li{
+				width: 100%;
+				height: 1.52rem;
+				background: #fff;
+				padding: .05rem .1rem;
+				div{
+					width: 100%;
+					height: 100%;
+					border-radius: .2rem;
+					background:url("/images/images/IMG_4730_02.png");
+					background-size: 100% auto;
+					@include flexbox();
+					p{
+						margin:auto;
+						b{
+							display: block;
+							color:#fff;
+							text-align: center;
+							&:first-child{
+								font-size: .20rem;
+							}
+							&:last-child{
+							font-size: .16rem;
+							@include border(1px, #fff);
+							padding: .02rem .1rem;
+							}
+						}
+					}
+				}
+			}
+		} 
+	}
+}

@@ -1,0 +1,92 @@
+<div class="home" id="home">
+	<header>
+		<ul>
+			<li>
+			<div>
+				<b class="yo-ico">&#xe61f;</b>
+			    <input type="text">
+			</div>
+			
+			</li>
+			<li class="yo-ico">&#xe611;</li>
+		</ul>
+	</header>
+	<section>
+	<div>
+<div class="swiper-container" id="index-swiper">
+  	<div id="swipet-font" class="swiper-wrapper">
+    <div class="swiper-slide" v-for="item in banner">
+    	<img v-bind:src="item">
+    </div>
+ </div>
+ <div class="swiper-pagination" ></div>
+</div>
+	</div>
+		<div>
+		<p>
+			<b>e食汇公告</b>
+			<b class="yo-ico">&#xe602;</b>
+			<b>e食汇退出限时抢购活动，优惠不断，欢迎前来选购</b>
+		</p>
+			
+		</div>
+		<div>
+			<ul>
+				<li>
+					<img src="/images/images/news.png">
+					<b>新品抢购</b>
+				</li>
+				<li>
+					<img src="/images/images/limit.png">
+					<b>限时抢购</b>
+				</li>
+				<li>
+					<img src="/images/images/hot.png">
+					<b>热销商品</b>
+				</li>
+				<li>
+					<img src="/images/images/integral.png">
+					<b>积分兑换</b>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h1>商家推荐</h1>
+			<ol>
+				<li v-for="item in list">
+				<div>
+					<img src="/images/images/IMG_4731_03.png">
+				</div>
+				<div>
+					<h2 v-text="item.title"></h2>
+					<h3 v-text="item.instruction"></h3>
+					<span v-text="item.nowprice"></span>
+					<b v-text="item.sales"></b>
+					<b class="price" v-text="item.oldprice"></b>
+				</div>
+				</li>		
+			</ol>
+		</div>
+	</section>
+	<footer>
+		<ul>
+			<li class="active">
+        		<i class="yo-ico">&#xe7ae;</i>
+       			 <b>首页</b>
+      		</li>
+	      	<li>
+	        	<i class="yo-ico a">&#xe65b;</i>
+	        	<b>分类</b>
+	      	</li>
+      		<li>
+       		 	<i class="yo-ico">&#xe611;</i>
+        		<b>购物车</b>
+      		</li>
+     		 <li>
+        		<i class="yo-ico">&#xe609;</i>
+        		<b>我的</b>
+     		 </li>
+     
+		</ul>
+	</footer>
+</div>
